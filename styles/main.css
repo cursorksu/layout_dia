@@ -618,7 +618,9 @@ button {
     color: #253757;
     background: transparent;
     padding: 0 20px 0 56px;
-    border-radius: 20px; }
+    border-radius: 20px;
+    text-decoration: none;
+    display: block; }
     .process__btn::before {
       content: "";
       position: absolute;
@@ -988,6 +990,10 @@ button {
       position: absolute;
       top: -45px;
       left: 50%; }
+  .testimonials__name {
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 4px; }
   .testimonials__card {
     -ms-flex-preferred-size: 314px;
         flex-basis: 314px;
@@ -1099,35 +1105,36 @@ button {
     .contacts-form {
       -ms-flex-preferred-size: 100%;
           flex-basis: 100%; } }
-  .contacts-form__field {
-    width: 100%;
-    display: block;
-    background: transparent;
-    border: none;
-    border-bottom: 2px solid #fff;
-    line-height: 56px;
-    margin-bottom: 30px;
-    color: #fff; }
-    .contacts-form__field::-webkit-input-placeholder {
-      color: #fff;
-      font-size: 15px; }
-    .contacts-form__field::-moz-placeholder {
-      color: #fff;
-      font-size: 15px; }
-    .contacts-form__field:-ms-input-placeholder {
-      color: #fff;
-      font-size: 15px; }
-    .contacts-form__field::-ms-input-placeholder {
-      color: #fff;
-      font-size: 15px; }
-    .contacts-form__field::placeholder {
-      color: #fff;
-      font-size: 15px; }
-    .contacts-form__field:last-of-type {
-      margin-bottom: 80px; }
-    .contacts-form__field:focus, .contacts-form__field:active {
-      outline: none;
-      border-bottom: 2px solid #ff9c8e; }
+
+.form__field {
+  width: 100%;
+  display: block;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #fff;
+  line-height: 56px;
+  margin-bottom: 30px;
+  color: #fff; }
+  .form__field::-webkit-input-placeholder {
+    color: #fff;
+    font-size: 15px; }
+  .form__field::-moz-placeholder {
+    color: #fff;
+    font-size: 15px; }
+  .form__field:-ms-input-placeholder {
+    color: #fff;
+    font-size: 15px; }
+  .form__field::-ms-input-placeholder {
+    color: #fff;
+    font-size: 15px; }
+  .form__field::placeholder {
+    color: #fff;
+    font-size: 15px; }
+  .form__field:last-of-type {
+    margin-bottom: 80px; }
+  .form__field:focus, .form__field:active {
+    outline: none;
+    border-bottom: 2px solid #ff9c8e; }
 
 .contacts {
   -ms-flex-preferred-size: 42%;
@@ -1144,10 +1151,18 @@ button {
     line-height: 1.5;
     color: #fff; }
   .contacts__tel {
+    text-decoration: none;
     font-weight: 600;
     font-size: 24px;
     line-height: 1.5;
-    color: #fff; }
+    color: #fff;
+    -webkit-transition: color 0.3s;
+    transition: color 0.3s; }
+    .contacts__tel:hover {
+      color: 0.3s; }
+    .contacts__tel:hover {
+      cursor: pointer;
+      color: #ff9c8e; }
   .contacts__group {
     margin-bottom: 48px; }
 
