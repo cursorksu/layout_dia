@@ -580,6 +580,10 @@ button {
     @media (max-width: 768px) {
       .process__text {
         font-size: 14px; } }
+    @media (max-width: 450px) {
+      .process__text {
+        max-width: 100%;
+        text-align: center; } }
   .process__grid {
     max-width: 558px;
     display: grid;
@@ -1497,7 +1501,7 @@ html {
   @media (max-width: 450px) {
     .subtitle {
       text-align: center;
-      margin: 0 auto; } }
+      margin: 0 auto 16px; } }
 
 .title {
   font-family: "Poppins", sans-serif;
